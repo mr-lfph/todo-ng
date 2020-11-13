@@ -1,27 +1,39 @@
-# TodoNg
+# To Do App  
+### __todo-ng__ App angular 9  with firebase 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
-## Development server
+### create a new project named todo-ng 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+create a new project using command `ng new todo-ng` Run the Peoject by `ng serve`
 
-## Code scaffolding
+install bootstrap `npm i bootstrap` add "node_modules/bootstrap/dist/css bootstrap  min. css" in styles angular.json file. create componet under layouts folder 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ng g c layouts/footer` create anotther component name category into root folder `ng g c category`
 
-## Build
+ Ex: g generate c component layouts folder and footer is component name
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ go app.component file and call here `<app-navbar></app-navbar>` component 
+ this `<app-navbar>` coming from selector attributes of navbar.component.ts file.
 
-## Running unit tests
+[cssmatic](cssmatic.com/box-shadow) for create  automatic css 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+install font awesome  `npm install --save @fortawesome/fontawesome-free` add path in angular.json also `"node_modules/@fortawesome/fontawesome-free/css/all.css"`
 
-## Running end-to-end tests
+install firebase `ng add @angular/fire`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+create service `ng g s service/category`
+Toastr `npm i ngx-toastr`
+Deploy
+`ng build --prod` then go firebase cli then deploy `npm install -g firebase-tools` local mechine to install firebase globally.then go dist folder and rename published folder as `public` and go cmd on that folder 
+`firebase login` then `firebase init` then some option here select deploy by pressing `space bar` then select existing project and some options will come complete those using y/n finally `firebase deploy` 
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+
+
+
+ 
+ 
