@@ -1,0 +1,30 @@
+
+.card{
+    border: none;
+    border-left: 5px solid rgb(181, 214, 181);
+    margin-top: 50px;
+    border-top-left-radius: 30px;
+}
+.badge-primary{
+    background-color: #f3f6ff;
+    color: rgb(68, 165, 68);
+}
+.badge-danger{
+    background-color: #f3f6ff;
+    color: rgb(190, 92, 92);
+    margin-top: 50px;
+}
+.cat-tools{
+    display: none;
+}
+.cat-tools i{
+   margin: 0px 5px;
+   cursor: pointer;
+}
+.categories-list .card:hover{
+    cursor: pointer;
+    background-color: #f3f6ff;
+}
+.categories-list .card:hover .cat-tools{
+    display: inline;
+}
